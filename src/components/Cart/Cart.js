@@ -3,8 +3,9 @@ import React from 'react';
 const Cart = (props) => {
 
     const { cart } = props;
-    const quantity = cart.reduce((previous, product) => previous + (product.quantity ? product.quantity : 1), 0)
-    const totalReducer = (previous, product) => previous + product.price * (product.quantity ? product.quantity : 1);
+    const quantity = cart.reduce((previous, product) => previous +
+        (product.quantity || 1), 0)
+    const totalReducer = (previous, product) => previous + product.price * (product.quantity || 1);
     const total = cart.reduce(totalReducer, 0);
     const tax = total * .2;
     let shipping = 0;

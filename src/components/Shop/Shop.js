@@ -40,9 +40,8 @@ const Shop = () => {
 
     const _quantity = (cart, product) => {
         for (const item of cart) {
-            console.log(item.quantity)
             if (item.key === product.key) {
-                item.quantity = item.quantity ? item.quantity + 1 : 2;
+                item.quantity = item.quantity + 1 || 2;
                 break;
             }
         }
