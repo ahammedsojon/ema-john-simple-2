@@ -20,19 +20,3 @@ nav a{
 nav a:hover{
     background-color: lightgray;
 }
-.search-container{
-    background-color: grey;
-    line-height: 40px;
-}
-.search-field{
-    width: 90%;
-    margin: auto;
-    text-align: left;
-    padding: 15px;
-}
-.search-field input{
-    width: 80%;
-    margin-right: auto;
-    height: 25px;
-    font-size: 18px;
-}
